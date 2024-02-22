@@ -1,3 +1,4 @@
+// Import necessary modules and assets
 import React from "react";
 import { Slide } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -6,6 +7,7 @@ import godImage from "../assets/god_ganga.jpg";
 import candleImage from "../assets/candle_ganga.jpg";
 import gangasagarImage from "../assets/gangasagar_ganga.jpg";
 
+// Define the style for the div elements
 const divStyle = {
   display: "flex",
   alignItems: "center",
@@ -16,17 +18,18 @@ const divStyle = {
   flexShrink: "0",
 };
 
+// CarouselComponent for displaying a slideshow of images
 const CarouselComponent = () => {
   return (
     <div className="slide-container">
       <Slide
-        duration={5000}
-        transitionDuration={1000}
-        autoplay={true}
-        infinite={true}
-        canSwipe={true}
-        indicators={false}
-        arrows={false}
+        duration={5000} // Slide duration
+        transitionDuration={1000} // Transition duration
+        autoplay={true} // Autoplay enabled
+        infinite={true} // Infinite looping enabled
+        canSwipe={true} // Swiping enabled
+        indicators={false} // Indicators disabled
+        arrows={false} // Arrows disabled
       >
         <div key={1}>
           <div
@@ -56,6 +59,7 @@ const CarouselComponent = () => {
             </div>
           </div>
         </div>
+        {/*Repeat the above structure for each slide*/}
         <div key={1}>
           <div
             style={{
@@ -145,4 +149,5 @@ const CarouselComponent = () => {
   );
 };
 
+// Export the CarouselComponent
 export default CarouselComponent;

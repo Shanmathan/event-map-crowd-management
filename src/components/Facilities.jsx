@@ -1,3 +1,4 @@
+// Import necessary modules and assets
 import React from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -11,13 +12,18 @@ import Toilet from "../assets/toilets.png";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
+// FacilitiesContainer is a component that displays a list of facilities with their respective images.
+// When an image is clicked, it sets the name of the facility and scrolls to the bottom of the page.
 const FacilitiesContainer = ({ setName }) => {
+  // useTheme and useMediaQuery are hooks provided by Material-UI to adapt styles based on the screen size.
   const theme = useTheme();
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
 
+  // imageSize and textSize are dynamically set based on the screen size.
   const imageSize = isSmallScreen ? "4rem" : "8rem";
   const textSize = isSmallScreen ? "body2" : "h6";
 
+  // handleScroll is a function that scrolls to the bottom of the page.
   function handleScroll() {
     window.scroll({
       top: document.body.offsetHeight,
@@ -25,6 +31,9 @@ const FacilitiesContainer = ({ setName }) => {
       behavior: "smooth",
     });
   }
+
+  // The component returns a list of facilities. Each facility is represented by an image and a name.
+  // When the image is clicked, setName is called with the name of the facility and the page is scrolled to the bottom.
   return (
     <div>
       <Typography

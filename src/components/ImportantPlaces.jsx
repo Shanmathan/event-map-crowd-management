@@ -1,3 +1,4 @@
+// Import necessary modules and assets
 import React from "react";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -16,12 +17,17 @@ import NagaSadhus from "../assets/naga_sadhus.jpg";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
+// Define the main component
 export default function ActionAreaCard() {
+  // Use theme for responsive design
   const theme = useTheme();
+  // Check if the screen size is small
   const isSmallScreen = useMediaQuery(theme.breakpoints.down("sm"));
+  // Define margins based on screen size
   const leftMargin = isSmallScreen ? "3vh" : "5rem";
   const topMargin = isSmallScreen ? "1vh" : "5vh";
 
+  // Define the places with their images, titles, and descriptions
   const places = [
     {
       image: SagarBeaach,

@@ -1,3 +1,4 @@
+// Import necessary modules and assets
 import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Menu from "@mui/material/Menu";
@@ -9,17 +10,26 @@ import Box from "@mui/material/Box";
 import { account } from "../config/AppWriteConfig";
 import { useNavigate } from "react-router-dom";
 
+// AccountMenu component is responsible for rendering the account settings dropdown menu
 export default function AccountMenu() {
+  // anchorEl is used to anchor the dropdown menu
   const [anchorEl, setAnchorEl] = useState(null);
+  // navigate is a hook from react-router-dom used for navigation
   const navigate = useNavigate();
+  // open is a boolean indicating whether the dropdown menu is open
   const open = Boolean(anchorEl);
+  // email and password are state variables used for login
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");
+
+  // handleLogin is the function that is called when the login form is submitted
   const handleLogin = () => {
+    // createEmailSession is a method from the account object that starts a new email session
     const promise = account.createEmailSession(email, password);
     promise.then(
       function (response) {
         console.log(response);
+        // navigate to the admin page after successful login
         navigate("/adminpage");
       },
       function (error) {
@@ -27,12 +37,17 @@ export default function AccountMenu() {
       }
     );
   };
+
+  // handleClick is the function that is called when the account settings button is clicked
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
+
+  // handleClose is the function that is called when the dropdown menu is closed
   const handleClose = () => {
     setAnchorEl(null);
   };
+
   return (
     <>
       <Tooltip title="Account settings">

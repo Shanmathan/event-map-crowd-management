@@ -1,3 +1,4 @@
+// Import necessary modules and assets
 import { MapContainer, TileLayer, Marker, Polyline } from "react-leaflet";
 import LocationMarker from "./LocationMarker.jsx";
 import Typography from "@mui/material/Typography";
@@ -6,21 +7,24 @@ import { database } from "../config/AppWriteConfig.jsx";
 import "leaflet/dist/leaflet.css";
 import "./css/map.css";
 
+// Map component
 function Map(name) {
-  const [markersData, setMarkersData] = useState([]);
-  const [points, setPoints] = useState([]);
-  const [currentposition, setPosition] = useState(null);
-  const [listOfPoints, setListOfPoints] = useState([]);
+  // State variables
+  const [markersData, setMarkersData] = useState([]); // Stores marker data
+  const [points, setPoints] = useState([]); // Stores points for polyline
+  const [currentposition, setPosition] = useState(null); // Stores current position
+  const [listOfPoints, setListOfPoints] = useState([]); // Stores list of points for route
 
+  // Base URL and API key for openrouteservice
   const baseUrl = "https://api.openrouteservice.org/v2/directions/driving-car";
   const apiKey = "5b3ce3597851110001cf62485846fae8b6944314bac24c3823764c37";
 
+  // Function to get route URL
   async function getRouteUrl(startPoint, endPoint) {
     const url = `${baseUrl}?api_key=${apiKey}&start=${startPoint}&end=${endPoint}`;
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      //console.log(data);
       setListOfPoints(data["features"][0]["geometry"]["coordinates"]);
       setPoints(listOfPoints.map((e) => [e[1], e[0]]));
     } else {
@@ -28,6 +32,7 @@ function Map(name) {
     }
   }
 
+  // Function to calculate distance between two points
   function calculateDistance(lat1, lon1, lat2, lon2) {
     var R = 6371; // Radius of the earth in km
     var dLat = deg2rad(lat2 - lat1);
@@ -43,16 +48,20 @@ function Map(name) {
     return d;
   }
 
+  // Function to convert degrees to radians
   function deg2rad(deg) {
     return deg * (Math.PI / 180);
   }
 
+  // Function to get coordinates for route
   function getCoordinates(longi, lati) {
     getRouteUrl(
       `${currentposition[0]},${currentposition[1]}`,
       `${longi},${lati}`
     );
   }
+
+  // Valid names for markers
   const validNames = [
     "Busstop",
     "Watersource",
@@ -63,6 +72,7 @@ function Map(name) {
     "Atm",
   ];
 
+  // Effect hook to fetch marker data and set current position
   useEffect(() => {
     if (!name || !validNames.includes(name.name)) {
       return;
@@ -81,7 +91,6 @@ function Map(name) {
             (doc) => doc.name === name.name
           );
           setMarkersData(filteredDocuments);
-          console.log(filteredDocuments);
         })
         .catch((err) => {
           console.error(err);
@@ -89,6 +98,7 @@ function Map(name) {
     }
   }, [name]);
 
+  // Render map and markers
   return (
     <>
       <Typography
