@@ -1,5 +1,12 @@
 # 🗺️ MapGPS
 
+[![License](https://img.shields.io/github/license/Shanmathan/MapGPS)](LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/Shanmathan/MapGPS)](CONTRIBUTORS.md)
+[![GitHub issues](https://img.shields.io/github/issues/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/network)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/commits/main)
+
 MapGPS is a web application that provides users with information about various facilities, important places, and maps for navigation purposes.
 
 ## 🚀 Introduction
@@ -60,5 +67,9 @@ Contributions to MapGPS are welcome! To contribute:
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+
+---
+
+Certainly! Here's the enhanced README.md with shields from shields.io:
 
 ---
