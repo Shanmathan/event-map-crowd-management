@@ -1,17 +1,17 @@
-# 🗺️ MapGPS
+# 🗺️ gangasagar-mela-event-map
 
-[![License](https://img.shields.io/github/license/Shanmathan/MapGPS)](LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/Shanmathan/MapGPS)](CONTRIBUTORS.md)
-[![GitHub issues](https://img.shields.io/github/issues/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/issues)
-[![GitHub stars](https://img.shields.io/github/stars/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/network)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Shanmathan/MapGPS)](https://github.com/Shanmathan/MapGPS/commits/main)
+[![License](https://img.shields.io/github/license/Shanmathan/gangasagar-mela-event-map)](LICENSE)
+[![GitHub contributors](https://img.shields.io/github/contributors/Shanmathan/gangasagar-mela-event-map)](CONTRIBUTORS.md)
+[![GitHub issues](https://img.shields.io/github/issues/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/issues)
+[![GitHub stars](https://img.shields.io/github/stars/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/network)
+[![GitHub last commit](https://img.shields.io/github/last-commit/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/commits/main)
 
-MapGPS is a web application that provides users with information about various facilities, important places, and maps for navigation purposes.
+gangasagar-mela-event-map is a web application that provides users with information about various facilities, important places, and maps for navigation purposes.
 
 ## 🚀 Introduction
 
-MapGPS is designed to help users navigate through different locations, find important places, and discover nearby facilities. Whether you're exploring a new city or planning a trip, MapGPS provides you with the tools you need to find your way around.
+gangasagar-mela-event-map is designed to help users navigate through different locations, find important places, and discover nearby facilities. Whether you're exploring a new city or planning a trip, gangasagar-mela-event-map provides you with the tools you need to find your way around.
 
 ## ✨ Features
 
@@ -38,7 +38,7 @@ MapGPS is designed to help users navigate through different locations, find impo
 
 ## 🏁 Getting Started
 
-To get started with MapGPS, follow these steps:
+To get started with gangasagar-mela-event-map, follow these steps:
 
 1. Clone the repository: `git clone <repository-url>`
 2. Install dependencies: `npm install`
@@ -56,7 +56,7 @@ Once the application is running, you can:
 
 ## 🤝 Contributing
 
-Contributions to MapGPS are welcome! To contribute:
+Contributions to gangasagar-mela-event-map are welcome! To contribute:
 
 1. Fork the repository
 2. Create your feature branch: `git checkout -b feature-name`
