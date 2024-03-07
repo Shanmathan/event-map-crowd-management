@@ -1,12 +1,5 @@
 # 🗺️ MapGPS
 
-[![npm version](https://img.shields.io/npm/v/readme-md-generator.svg?color=blue)](https://www.npmjs.com/package/readme-md-generator)
-[![npm downloads](https://img.shields.io/npm/dm/readme-md-generator.svg?color=blue)](https://www.npmjs.com/package/readme-md-generator)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![codecov](https://codecov.io/gh/kefranabg/readme-md-generator/branch/master/graph/badge.svg)](https://codecov.io/gh/kefranabg/readme-md-generator)
-[![gitmoji-changelog](https://img.shields.io/badge/changelog-gitmoji-brightgreen.svg)](https://github.com/frinyvonnick/gitmoji-changelog)
-[![Twitter: FranckAbgrall](https://img.shields.io/twitter/follow/FranckAbgrall.svg?style=social)](https://twitter.com/FranckAbgrall)
-
 MapGPS is a web application that provides users with information about various facilities, important places, and maps for navigation purposes.
 
 ## 🚀 Introduction
