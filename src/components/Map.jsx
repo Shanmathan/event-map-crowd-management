@@ -17,7 +17,7 @@ function Map(name) {
 
   // Base URL and API key for openrouteservice
   const baseUrl = "https://api.openrouteservice.org/v2/directions/driving-car";
-  const apiKey = "5b3ce3597851110001cf62485846fae8b6944314bac24c3823764c37";
+  const apiKey = ""; // Enter your API key here
 
   // Function to get route URL
   async function getRouteUrl(startPoint, endPoint) {
@@ -85,7 +85,7 @@ function Map(name) {
         setPosition(newPostion);
       });
       database
-        .listDocuments("65a4323a1201a22bec22", "65a4585e898e105e9b66")
+        .listDocuments("", "") // Add your document ID and collection ID here
         .then((response) => {
           const filteredDocuments = response.documents.filter(
             (doc) => doc.name === name.name

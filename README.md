@@ -64,6 +64,40 @@ To get started with gangasagar-mela-event-map, follow these steps:
 3. Run the development server: `npm run dev`
 4. Open your browser and navigate to `http://localhost:8000` to view the application.
 
+### Setting Up Database Connection and API Key
+
+To connect to your database and use the API key in your project, you need to follow these steps:
+
+#### Map.jsx
+
+Replace `""` with your API key in the `const apiKey = "";` declaration:
+
+```javascript
+const apiKey = "YOUR_API_KEY";
+```
+
+Replace the empty strings `""` in the `listDocuments("", "")` method with your document ID and collection ID:
+
+```javascript
+database.listDocuments("YOUR_DOCUMENT_ID", "YOUR_COLLECTION_ID");
+```
+
+#### AppWriteConfig.jsx
+
+Add your database ID by replacing `""` in the `new Databases(client, "")` method:
+
+```javascript
+new Databases(client, "YOUR_DATABASE_ID");
+```
+
+Add your project ID by replacing `""` in the `setProject()` method:
+
+```javascript
+client.setProject("YOUR_PROJECT_ID");
+```
+
+Make sure to fill in the required values accurately to establish a successful connection with your database and utilize the API key in your project.
+
 ## 🔧 Usage
 
 Once the application is running, you can:
