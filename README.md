@@ -1,13 +1,6 @@
 # 🗺️ gangasagar-mela-event-map
 
-[![License](https://img.shields.io/github/license/Shanmathan/gangasagar-mela-event-map)](LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/Shanmathan/gangasagar-mela-event-map)](CONTRIBUTORS.md)
-[![GitHub issues](https://img.shields.io/github/issues/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/issues)
-[![GitHub stars](https://img.shields.io/github/stars/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/network)
-[![GitHub last commit](https://img.shields.io/github/last-commit/Shanmathan/gangasagar-mela-event-map)](https://github.com/Shanmathan/gangasagar-mela-event-map/commits/main)
-
-gangasagar-mela-event-map is a web application that provides users with information about various facilities, important places, and maps for navigation purposes.
+> gangasagar-mela-event-map is a web application that provides users with information about various facilities, important places, and maps for navigation purposes.
 
 ## 🚀 Introduction
 
@@ -34,7 +27,33 @@ gangasagar-mela-event-map is designed to help users navigate through different l
 
 ## 📸 Demo Pictures
 
-- Insert demo pictures here.
+#### Image Slideshow
+
+![Image Slideshow](./images/slideshow.png)
+
+#### Popular Attractions
+
+![Popular Attractions](./images/popular-attractions.png)
+
+#### Google Translate API
+
+![Google Translate API](./images/google-translate.png)
+
+#### Facilities
+
+![Facilities](./images/facilities.png)
+
+#### Event Map
+
+![Map](./images/event-map.png)
+
+#### User Location
+
+![User Location](./images/user-location.png)
+
+#### Routing Service
+
+![Routing Service](./images/route.png)
 
 ## 🏁 Getting Started
 
@@ -67,9 +86,5 @@ Contributions to gangasagar-mela-event-map are welcome! To contribute:
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
-
----
-
-Certainly! Here's the enhanced README.md with shields from shields.io:
 
 ---
