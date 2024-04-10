@@ -4,7 +4,7 @@
 
 ## 🚀 Introduction
 
-Crowd Management Event Map is designed to help users navigate through different locations, find important places, and discover nearby facilities. Whether you're exploring a new city or planning a trip, Crowd Management Event Map provides you with the tools you need to find your way around.
+Crowd Management Event Map is designed to help users navigate through different locations, find important places, and discover nearby facilities. Whether you're exploring a new festival or crowded place, Crowd Management Event Map provides you with the tools you need to find your way around.
 
 ## ✨ Features
 
