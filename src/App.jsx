@@ -1,6 +1,6 @@
 // Importing necessary modules and components
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import IntroPage from "./Pages/IntroPage.jsx";
+import IntroPage from "./pages/IntroPage.jsx";
 import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap for styling
 import Map from "./components/Map.jsx";
 
