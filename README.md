@@ -119,6 +119,7 @@ Contributions to Crowd Management Event Map are welcome! To contribute:
 
 ## 📄 License
 
-This project is licensed under the [MIT License](LICENSE).
+Distributed under the MIT License. See [`LICENSE`](https://mit-license.org/) for more information.
+
 
 ---
