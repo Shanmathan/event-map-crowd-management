@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.14.0",
     "@fontsource/roboto": "^5.1.1",
     "@mui/icons-material": "^6.4.4",
-    "@mui/material": "^6.4.4",
+    "@mui/material": "^6.4.5",
     "appwrite": "^17.0.0",
     "bootstrap": "^5.3.3",
     "leaflet": "^1.9.4",
