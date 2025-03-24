@@ -15,7 +15,7 @@
     "@fontsource/roboto": "^5.2.5",
     "@mui/icons-material": "^6.4.7",
     "@mui/material": "^6.4.6",
-    "appwrite": "^17.0.0",
+    "appwrite": "^17.0.1",
     "bootstrap": "^5.3.3",
     "leaflet": "^1.9.4",
     "react": "^19.0.0",
